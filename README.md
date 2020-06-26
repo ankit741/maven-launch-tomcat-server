@@ -3,8 +3,37 @@ Maven Configuration to copy, launch and deploy war file on tomcat server with cu
 
 # Update tomcat configuration 
 
-Copy all tomcat conf files(**C:\apache-tomcat\conf**) to **dev\deploy\tomcat\conf** directory.
+Please follow below steps :
 
+1.You should ensure that tomcat is installed and environment variables are set for tomcat and java .
+2. Copy all tomcat conf files(**C:\apache-tomcat\conf**) to **dev\deploy\tomcat\conf** directory.
+3. create below directories under **deploy\tomcat**
+    conf
+    logs
+    temp
+    webapps
+    work
+
+# start.bat
+``
+@ECHO OFF
+SET TITLE=Tomcat - deploy service - port: 9090
+set argument1=%1
+
+SETLOCAL
+
+set OC_DEVENV=%argument1%
+
+set CLIENT_HOME=%OC_DEVENV%\webapps
+
+set CATALINA_OPTS=%CATALINA_OPTS% -Dclient.home=%CLIENT_HOME%
+
+set CATALINA_TMPDIR=%CATALINA_BASE%\temp
+
+set JPDA_OPTS=-agentlib:jdwp=transport=dt_socket,address=8000,server=y,suspend=n
+
+call %CATALINA_HOME%\bin\catalina.bat jpda start
+```
 # Usage
 
   ```  
