@@ -12,7 +12,7 @@ Please follow below steps :
     logs\
     temp\
     webapps\
-    work\
+    work
 
 # start.bat
 ```
@@ -22,9 +22,9 @@ set argument1=%1
 
 SETLOCAL
 
-set OC_DEVENV=%argument1%
+set DEVENV=%argument1%
 
-set CLIENT_HOME=%OC_DEVENV%\webapps
+set CLIENT_HOME=%DEVENV%\webapps
 
 set CATALINA_OPTS=%CATALINA_OPTS% -Dclient.home=%CLIENT_HOME%
 
