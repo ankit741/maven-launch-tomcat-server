@@ -1,6 +1,10 @@
 # maven-launch-tomcat-server
 Maven Configuration to copy, launch and deploy war file on tomcat server with custom deployment folder.
 
+# Update tomcat configuration 
+
+Copy all tomcat conf files(**C:\apache-tomcat\conf**) to **dev\deploy\tomcat\conf** directory.
+
 # Usage
 
   ```  <properties>
@@ -73,6 +77,11 @@ Maven Configuration to copy, launch and deploy war file on tomcat server with cu
         </plugins>
     </build>
 ```
+
+# Start Tomcat 
+
+mvn clean install
+
 # License
 
 Licensed under Apache 2.0. Please see [LICENSE](LICENSE) for details.
