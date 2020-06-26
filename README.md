@@ -1,8 +1,9 @@
 # maven-launch-tomcat-server
-Mvane Configuration to launch and deploy war file on tomcat server with custom deployment folder.
+Maven Configuration to launch and deploy war file on tomcat server with custom deployment folder.
+
 # Usage
 
-    <properties>
+  ```  <properties>
         <dev.root.dir>${project.basedir}</dev.root.dir>
         <dev.dep.dir>deploy\tomcat</dev.dep.dir>
         <dev.wars.dir>deploy\tomcat\webapps</dev.wars.dir>
@@ -71,7 +72,7 @@ Mvane Configuration to launch and deploy war file on tomcat server with custom d
             </plugin>
         </plugins>
     </build>
-
+```
 # License
 
 Licensed under Apache 2.0. Please see [LICENSE](LICENSE) for details.
