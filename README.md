@@ -5,14 +5,15 @@ Maven Configuration to copy, launch and deploy war file on tomcat server with cu
 
 Please follow below steps :
 
-1.You should ensure that tomcat is installed and environment variables are set for tomcat and java .\
-2. Copy all tomcat conf files(**C:\apache-tomcat\conf**) to **dev\deploy\tomcat\conf** directory.\
-3. create below directories under **deploy\tomcat**\
+1. You should ensure that tomcat is installed and environment variables are set for tomcat and java .\
+2. Copy all tomcat conf files(**C:\apache-tomcat\conf**) to **${project.basedir}\deploy\tomcat\conf** directory.\
+3. Create below directories under **${project.basedir}\deploy\tomcat**\
     conf\
     logs\
     temp\
     webapps\
-    work
+    work\
+4. Create start.bat file in deploy folder.
 
 # start.bat
 ```
