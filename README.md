@@ -12,7 +12,7 @@ Please follow below steps :
     logs\
     temp\
     webapps\
-    work\
+    work
 4. Create start.bat file in deploy folder.
 
 # start.bat
