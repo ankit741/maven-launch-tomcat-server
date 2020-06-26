@@ -1,5 +1,5 @@
 # maven-launch-tomcat-server
-Maven Configuration to launch and deploy war file on tomcat server with custom deployment folder.
+Maven Configuration to copy, launch and deploy war file on tomcat server with custom deployment folder.
 
 # Usage
 
