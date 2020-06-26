@@ -7,7 +7,8 @@ Copy all tomcat conf files(**C:\apache-tomcat\conf**) to **dev\deploy\tomcat\con
 
 # Usage
 
-  ```  <properties>
+  ```  
+  <properties>
         <dev.root.dir>${project.basedir}</dev.root.dir>
         <dev.dep.dir>deploy\tomcat</dev.dep.dir>
         <dev.wars.dir>deploy\tomcat\webapps</dev.wars.dir>
